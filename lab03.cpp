@@ -1,13 +1,48 @@
 #include <iostream>
 
 int excercise1() {
-
+	int N = 0;
+	std::cout<<"Input number: ";
+	std::cin>>N;
+	for(int i = 0; i<N; i++){
+	    std::cout<<"*";
+	}
+	std::cout<<std::endl;
+	return 0;
 }
 int excercise2() {
-	std::cout << "Excercise pending completion" << std::endl;
+	int N = 0;
+	std::cout<<"Input number: ";
+	std::cin>>N;
+	for(int i = 0; i<N; i++){
+	    if(i%2==0){
+	        std::cout<<"*";
+	    }else{
+	        std::cout<<".";
+	    }
+	}
+	std::cout<<std::endl;
+	return 0;
 }
 int excercise3() {
-	std::cout << "Excercise pending completion" << std::endl;
+	int R = 0;
+	int C = 0;
+	std::cout<<"Input number of rows: ";
+	std::cin>>R;
+	std::cout<<"Input number of columns: ";
+	std::cin>>C;
+	for(int i = 0; i<R; i++){
+	    for(int j = 0; j<C; j++){
+	        if(i%2==0){
+	            std::cout<<"X";
+	        }else{
+	            std::cout<<".";
+	        }
+	    }
+	    std::cout<<std::endl;
+	}
+	std::cout<<std::endl;
+	return 0;
 }
 int excercise4() {
 	std::cout << "Excercise pending completion" << std::endl;
