@@ -45,13 +45,68 @@ int excercise3() {
 	return 0;
 }
 int excercise4() {
-	std::cout << "Excercise pending completion" << std::endl;
+	int N = 0;
+	std::cout<<"Input number: ";
+	std::cin>>N;
+	for(int i = 0; i<N; i++){
+	    for(int j = 0; j<i; j++){
+	        std::cout<<".";
+	    }
+	    for(int k = (N-i); k>0; k--){
+	            std::cout<<"X";
+	        }
+	    std::cout<<std::endl;
+	}
+	std::cout<<std::endl;
+	return 0;
 }
 int excercise5() {
-	std::cout << "Excercise pending completion" << std::endl;
+	int N = 0;
+	int temp = 1;
+	std::cout<<"Input number: ";
+	std::cin>>N;
+	for(int i = 0; i<N; i++){
+	    for(int j = 0; j<N; j++){
+	        temp++;
+	        if(temp%2==0){
+	            std::cout<<"X";
+	        }else{
+	            std::cout<<".";
+	        }
+	    }
+	    temp++;
+	    std::cout<<std::endl;
+	}
+	std::cout<<std::endl;
+	return 0;
 }
 int excercise6() {
-	std::cout << "Excercise pending completion" << std::endl;
+	int N = 0;
+	std::cout<<"Input number: ";
+	std::cin>>N;
+	if(N%2 != 0){
+	    N++;
+	}
+	for(int i = 0; i<N; i++){
+	    for(int j = 0; j<N; j++){
+	        if(i<(N/2)){
+	            if(j<(N/2)){
+	            std::cout<<"X";
+	            }else{
+	            std::cout<<".";
+	            }
+	        }else{
+	            if(j<(N/2)){
+	            std::cout<<".";
+	            }else{
+	            std::cout<<"X";
+	            }
+	        }
+	    }
+	    std::cout<<std::endl;
+	}
+	std::cout<<std::endl;
+	return 0;
 }
 
 
